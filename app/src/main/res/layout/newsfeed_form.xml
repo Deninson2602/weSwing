@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#fcf8f0"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:padding="10dp">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/profile_pic"
+        android:layout_width="45dp"
+        android:layout_height="40dp"
+        android:src="@drawable/profile_icon"
+        android:padding="2dp"
+        app:civ_border_width="0dp"
+        app:civ_border_color="#FF000000"/>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/context"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Nombre Apellido"
+            android:layout_marginLeft="10dp"
+            android:textColor="#af635f"/>
+
+        <TextView
+            android:id="@+id/horari"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Fa 10 hores"
+            android:layout_marginLeft="10dp"
+            android:textColor="#666666"/>
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="45dp"
+        android:layout_height="fill_parent">
+
+        <ImageView
+            android:id="@+id/action_go"
+            android:layout_width="45dp"
+            android:layout_weight="1"
+            android:layout_height="40dp"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="5dp"
+            android:padding="8dp"
+            android:src="@drawable/baseline_arrow_forward_ios_24" />
+
+    </RelativeLayout>
+
+</LinearLayout>

@@ -1,0 +1,51 @@
+<resources>
+    <string name="app_name">WeSwing</string>
+    <string name="title_activity_registre">Registre</string>
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+
+    <string name="descripcio">Comencem un nou curs ballant a la Festa d´Inici de Trimestre amb presentació dels Trio!! Horaris: de 22:00 a 22:30 - música swing amb DJ de 22:30 a 23:15 - Primera part Concert de 23:15 a 00:00 - Presentació de professors i actuacions de 00:00 a 00:45 - Segona part Concert de 00:45 a 01:30 - música swing amb DJ Preu: 6€ Alumnes Swing Maniacs 8€ BCNswing, Hoppers Garriga, Terrassahoppers, Crazy Legs, TGNswing i Bigpotters de Granollers 9€\
+    Entrada general\
+    22/04/2017 - 23/04/2017 (4 Hores)\
+    Barcelona, España
+    </string>
+
+    <string name="descripcio2">Vaig descubrir el Lindy Hop vivint a París, però no vaig començar a rebre classes fins tornar a Barcelona el 2011. De seguida vaig passar a ballar moltes hores per setmana, tant a l`escola com...</string>
+
+    <string-array name="genders">
+        <item>Male</item>
+        <item>Female</item>
+    </string-array>
+
+    <string-array name="languages">
+        <item>English</item>
+        <item>Español</item>
+        <item>Català</item>
+    </string-array>
+
+    <string-array name="countries">
+        <item>España</item>
+        <item>Portugal</item>
+        <item>Francia</item>
+        <item>EEUU</item>
+        <item>Japón</item>
+    </string-array>
+
+    <string-array name="spain_cities">
+        <item>Madrid</item>
+        <item>Barcelona</item>
+        <item>Sevilla</item>
+        <item>Valencia</item>
+        <item>Zaragoza</item>
+    </string-array>
+
+    <string-array name="type">
+        <item>Follower</item>
+        <item>Creator</item>
+    </string-array>
+
+</resources>

@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#fcf8f0"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/date_header"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="18 de abril de 2017 "
+        android:background="#f3efe6"
+        android:padding="5dp"
+        android:layout_marginLeft="5dp"
+        android:textSize="10dp"
+        android:textStyle="bold"
+        android:textColor="#a24844"
+        android:ellipsize="end"
+        android:maxLines="1"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#AAAAAA" />
+
+    <LinearLayout
+        android:layout_margin="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/profile_pic"
+            android:layout_width="45dp"
+            android:layout_height="40dp"
+            android:src="@drawable/profile_icon"
+            android:padding="2dp"
+            app:civ_border_width="0dp"
+            app:civ_border_color="#FF000000"/>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/context"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="I'm beginning to see the light"
+                android:layout_marginLeft="10dp"
+                android:textColor="#000"
+                android:ellipsize="end"
+                android:maxLines="1"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    app:tint="#969696"
+                    android:src="@drawable/home"
+                    android:scaleType="fitCenter"
+                    android:layout_marginLeft="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"/>
+
+                <TextView
+                    android:id="@+id/organitzar"
+                    android:ellipsize="end"
+                    android:maxLines="1"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Organitzar per Big Mama"
+                    android:layout_marginLeft="5dp"
+                    android:textColor="#666666"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    app:tint="#969696"
+                    android:layout_width="15dp"
+                    android:layout_height="fill_parent"
+                    android:layout_marginLeft="10dp"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/baseline_access_time_24" />
+
+                <TextView
+                    android:id="@+id/fecha"
+                    android:ellipsize="end"
+                    android:maxLines="1"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="17/07/2017 - 18/04/2017 | 2h hores"
+                    android:layout_marginLeft="5dp"
+                    android:textColor="#666666"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:layout_width="15dp"
+                    android:layout_height="fill_parent"
+                    android:layout_marginLeft="10dp"
+                    android:scaleType="fitCenter"
+                    app:tint="#969696"
+                    android:src="@drawable/brujula" />
+
+                <TextView
+                    android:id="@+id/location"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Madrid, Spain"
+                    android:ellipsize="end"
+                    android:maxLines="1"
+                    android:layout_marginLeft="5dp"
+                    android:textColor="#666666"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    app:tint="#969696"
+                    android:layout_width="15dp"
+                    android:layout_height="fill_parent"
+                    android:layout_marginLeft="10dp"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/profile_icon" />
+
+                <TextView
+                    android:id="@+id/assistents"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="0 assistents | 0 amics"
+                    android:layout_marginLeft="5dp"
+                    android:ellipsize="end"
+                    android:maxLines="1"
+                    android:textColor="#666666"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="45dp"
+            android:layout_height="fill_parent">
+
+            <ImageView
+                android:id="@+id/action_go"
+                android:layout_width="45dp"
+                android:layout_weight="1"
+                android:layout_height="40dp"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="5dp"
+                android:padding="8dp"
+                android:src="@drawable/baseline_arrow_forward_ios_24" />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#AAAAAA" />
+
+</LinearLayout>

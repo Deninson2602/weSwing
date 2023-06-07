@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Inici"
+    android:background="@color/iniciColor">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="500px"
+        android:layout_height="500px"
+        android:layout_gravity="center"
+        android:layout_marginTop="500px"
+        app:srcCompat="@drawable/logoimg" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnLogin"
+        android:layout_width="800px"
+        android:layout_height="wrap_content"
+        android:text="INICIAR SESIÓ"
+        android:textStyle="bold"
+        android:layout_gravity="center"
+        android:textAlignment="center"
+        android:textColor="@android:color/white"
+        android:background="@drawable/btn_rectangular"
+        android:layout_marginBottom="40px"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnRegistre"
+        android:layout_width="800px"
+        android:layout_height="wrap_content"
+        android:text="REGISTRO"
+        android:layout_gravity="center"
+        android:textAlignment="center"
+        android:textStyle="bold"
+        android:textColor="@android:color/white"
+        android:background="@drawable/btn_rectangular"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginTop="50dp">
+
+        <ImageView
+            android:id="@+id/instagramIMG"
+            android:layout_width="125px"
+            android:layout_height="125px"
+            android:layout_marginRight="16dp"
+            app:srcCompat="@drawable/instagram_icono" />
+
+        <ImageView
+            android:id="@+id/facebookIMG"
+            android:layout_width="125px"
+            android:layout_height="125px"
+            android:layout_marginRight="16dp"
+            app:srcCompat="@drawable/facebook_icono" />
+
+        <ImageView
+            android:id="@+id/gmailIMG"
+            android:layout_width="125px"
+            android:layout_height="125px"
+            android:layout_marginRight="16dp"
+            app:srcCompat="@drawable/gmail_icono" />
+
+        <ImageView
+            android:id="@+id/twitterIMG"
+            android:layout_width="125px"
+            android:layout_height="125px"
+            android:layout_marginRight="16dp"
+            app:srcCompat="@drawable/twitter_icono" />
+    </LinearLayout>
+
+</LinearLayout>

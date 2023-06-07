@@ -1,0 +1,483 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/colorFondoActivity"
+    tools:context=".assistents">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.appcompat.widget.Toolbar
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/btnColor">
+
+            <ImageButton
+                android:id="@+id/btnRetroceder"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/baseline_arrow_back_ios_24"
+                android:background="@color/btnColor"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="MOGUDA"
+                android:layout_gravity="center"
+                android:textColor="@color/white"
+                android:textSize="20dp"
+                android:textStyle="bold"/>
+
+        </androidx.appcompat.widget.Toolbar>
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:fillViewport="true"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:elevation="3dp"
+                android:background="#fcf8f0"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:paddingTop="5dp"
+                android:paddingBottom="18dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/textView"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="end"
+                    android:maxLines="1"
+                    android:text="FESTA D'INICI DE TRIMESTRE"
+                    android:textAlignment="center"
+                    android:textAllCaps="true"
+                    android:textColor="#a24845"
+                    android:textSize="30dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/textView2"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="end"
+                    android:maxLines="1"
+                    android:text="ALTRES∙LINDY HOP"
+                    android:textAlignment="center"
+                    android:textAllCaps="true"
+                    android:textColor="#827f79"
+                    android:textSize="20dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/textView3"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="end"
+                    android:maxLines="1"
+                    android:text="22/04/2017-23/04/2017 (4 HORES)"
+                    android:textAlignment="center"
+                    android:textAllCaps="true"
+                    android:textColor="#827f79"
+                    android:textSize="18dp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:elevation="3dp"
+                android:background="#fcf8f0"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:paddingTop="5dp"
+                android:paddingBottom="10dp"
+                android:orientation="vertical">
+
+                <Switch
+                    android:id="@+id/switch1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Hi assistiré"
+                    android:switchMinWidth="30dp"
+                    android:switchPadding="10dp"
+                    android:textSize="20sp"
+                    android:padding="10dp"
+                    android:thumbTint="@drawable/switch_selector"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:elevation="3dp"
+                android:background="#fcf8f0"
+                android:paddingTop="5dp"
+                android:paddingBottom="10dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/textView5"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="end"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:layout_marginBottom="5dp"
+                    android:maxLines="1"
+                    android:text="Organitzador i localització"
+                    android:textColor="#000"
+                    android:textSize="23dp"
+                    android:textStyle="bold" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#AAAAAA"/>
+
+                <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#fcf8f0"
+                    xmlns:app="http://schemas.android.com/apk/res-auto"
+                    android:padding="10dp">
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:id="@+id/profile_pic"
+                        android:layout_width="45dp"
+                        android:layout_height="40dp"
+                        android:padding="2dp"
+                        app:civ_border_width="0dp"
+                        app:civ_border_color="#FF000000"/>
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/context"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Swing Maniacs"
+                            android:layout_marginLeft="10dp"
+                            android:textSize="20sp"
+                            android:textStyle="bold"
+                            android:textColor="#454545"/>
+
+                        <TextView
+                            android:id="@+id/horari"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Barcelona, España\nBarcelona Espanya"
+                            android:layout_marginLeft="10dp"
+                            android:textColor="#666666"/>
+
+                    </LinearLayout>
+
+                    <RelativeLayout
+                        android:layout_width="45dp"
+                        android:layout_height="fill_parent">
+
+                        <ImageView
+                            android:id="@+id/escola_go"
+                            android:layout_width="45dp"
+                            android:layout_weight="1"
+                            android:layout_height="40dp"
+                            android:layout_centerVertical="true"
+                            android:layout_marginStart="5dp"
+                            android:padding="8dp"
+                            android:src="@drawable/baseline_arrow_forward_ios_24"
+                            app:tint="#cccccc"/>
+
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:elevation="3dp"
+                android:background="#fcf8f0"
+                android:paddingTop="5dp"
+                android:paddingBottom="10dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/textView6"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="end"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:layout_marginBottom="5dp"
+                    android:maxLines="1"
+                    android:text="Descripció"
+                    android:textColor="#000"
+                    android:textSize="23dp"
+                    android:textStyle="bold" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#AAAAAA"/>
+
+                <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#fcf8f0"
+                    xmlns:app="http://schemas.android.com/apk/res-auto"
+                    android:padding="10dp">
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Festa d'Inici de Trimestre i presentació dels professors!"
+                            android:textSize="16sp"
+                            android:textStyle="bold"
+                            android:textColor="#000"/>
+
+                        <TextView
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/descripcio"
+                            android:textSize="13sp"
+                            android:textColor="#666666"/>
+
+                        <TextView
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:text=""
+                            android:textSize="16sp"
+                            android:textColor="#666666"/>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:elevation="3dp"
+                android:background="#fcf8f0"
+                android:paddingTop="5dp"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:id="@+id/assistents"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#fcf8f0"
+                    xmlns:app="http://schemas.android.com/apk/res-auto"
+                    android:padding="10dp">
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:clickable="false"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Assistents"
+                            android:layout_weight="1"
+                            android:clickable="false"
+                            android:layout_marginLeft="10dp"
+                            android:textSize="24sp"
+                            android:layout_marginVertical="4dp"
+                            android:textColor="#454545"/>
+
+                        <TextView
+                            android:background="@drawable/fondo_nums_escola"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="5"
+                            android:padding="3dp"
+                            android:clickable="false"
+                            android:layout_marginLeft="10dp"
+                            android:textSize="22sp"
+                            android:layout_marginVertical="4dp"
+                            android:textColor="#454545"/>
+
+                    </LinearLayout>
+
+                    <RelativeLayout
+                        android:layout_width="45dp"
+                        android:clickable="false"
+                        android:layout_height="fill_parent">
+
+                        <ImageView
+                            android:id="@+id/action_go"
+                            android:layout_width="45dp"
+                            android:layout_weight="1"
+                            android:layout_height="40dp"
+                            android:clickable="false"
+                            android:layout_centerVertical="true"
+                            android:layout_marginStart="5dp"
+                            android:padding="8dp"
+                            android:src="@drawable/baseline_arrow_forward_ios_24"
+                            app:tint="#cccccc" />
+
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:elevation="3dp"
+                android:background="#fcf8f0"
+                android:paddingTop="5dp"
+                android:paddingBottom="10dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="end"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:layout_marginBottom="5dp"
+                    android:layout_margin="3dp"
+                    android:maxLines="1"
+                    android:text="Fotografíes"
+                    android:textColor="#444444"
+                    android:textSize="23dp"
+                    android:textStyle="bold" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#AAAAAA"/>
+
+                <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#fcf8f0"
+                    xmlns:app="http://schemas.android.com/apk/res-auto"
+                    android:padding="10dp">
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:text="No hi ha fotografíes"
+                            android:layout_marginLeft="5dp"
+                            android:textSize="20sp"
+                            android:textColor="#444444"/>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="150dp"
+        android:layout_weight="1"
+        android:background="#e7e2d7">
+
+        <ImageView
+            android:id="@+id/btnHour"
+            android:layout_width="fill_parent"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:padding="2dp"
+            android:src="@drawable/baseline_access_time_24"
+            android:layout_gravity="center_vertical"/>
+
+        <ImageView
+            android:id="@+id/btnNewspaper"
+            android:layout_width="fill_parent"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:padding="2dp"
+            android:src="@drawable/baseline_newspaper_24"
+            android:layout_gravity="center_vertical"/>
+
+        <ImageView
+            android:id="@+id/btnStar"
+            android:layout_width="fill_parent"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:padding="2dp"
+            android:src="@drawable/baseline_star_outline_24"
+            android:layout_gravity="center_vertical"/>
+
+        <ImageView
+            android:id="@+id/btnCalendar"
+            android:layout_width="fill_parent"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:padding="2dp"
+            android:src="@drawable/baseline_calendar_today_24"
+            android:layout_gravity="center_vertical"/>
+
+        <ImageView
+            android:id="@+id/btnSearch"
+            android:layout_width="fill_parent"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:padding="2dp"
+            android:src="@drawable/baseline_search_24"
+            android:layout_gravity="center_vertical"/>
+
+        <ImageView
+            android:id="@+id/btnChat"
+            android:layout_width="fill_parent"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:padding="2dp"
+            android:src="@drawable/baseline_chat_bubble_outline_24"
+            android:layout_gravity="center_vertical"/>
+
+    </LinearLayout>
+
+</LinearLayout>
